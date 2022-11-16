@@ -1,1 +1,9 @@
 <h1><%= @restaurant.name %></h1>
+<p> Address: <%= @restaurant.address %></p>
+<p> Phone: <%= @restaurant.phone_number %></p>
+<p> Kitchen: <%= @restaurant.category %></p>
+
+<br/>
+
+<button class="btn btn-info"><%= link_to "Go back", restaurants_path%></button>
+<button class="btn btn-info"><%= link_to "See reviews", reviews_path%></button>

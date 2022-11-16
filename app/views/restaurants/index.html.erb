@@ -1,5 +1,5 @@
 <h1>Restaurants</h1>
 <% @restaurants.each do |restaurant| %>
-<p><%= restaurant.name %></p>
+<p><%= link_to restaurant.name, restaurant_path(restaurant) %></p>
 <% end %>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<button class="btn btn-warning"><%= link_to "Create new restaurant", restaurants_new_path%></button>
